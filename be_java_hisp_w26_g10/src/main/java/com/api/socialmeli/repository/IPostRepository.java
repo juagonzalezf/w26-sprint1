@@ -2,9 +2,11 @@ package com.api.socialmeli.repository;
 
 import com.api.socialmeli.entity.Post;
 
+import java.util.List;
+import java.util.Optional;
+
 public interface IPostRepository {
-    Post save();
-    Post getById(int id);
-    Post update(Post post);
-    void delete(int id);
+    List<Post> loadAllPosts();
+    int searchPostId();
+
 }
